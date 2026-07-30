@@ -138,16 +138,16 @@ local function aceRedeem(code)
     return aceRedeemViaRemote(code)
 end
 local COLORS = {
-    Window = Color3.fromRGB(0, 0, 0),
-    Row = Color3.fromRGB(5, 5, 5),
-    Control = Color3.fromRGB(8, 8, 8),
-    Log = Color3.fromRGB(0, 0, 0),
-    Border = Color3.fromRGB(20, 20, 20),
-    White = Color3.fromRGB(255, 255, 255),
-    Text = Color3.fromRGB(245, 245, 245),
-    Dim = Color3.fromRGB(110, 110, 110),
-    Accent = Color3.fromRGB(255, 255, 255),
-    Green = Color3.fromRGB(0, 220, 120),
+    Window = Color3.fromRGB(6, 6, 7),
+    Row = Color3.fromRGB(15, 15, 17),
+    Control = Color3.fromRGB(35, 35, 39),
+    Log = Color3.fromRGB(10, 10, 12),
+    Border = Color3.fromRGB(82, 82, 89),
+    White = Color3.fromRGB(245, 245, 245),
+    Text = Color3.fromRGB(190, 190, 196),
+    Dim = Color3.fromRGB(120, 120, 130),
+    Accent = Color3.fromRGB(245, 245, 245),
+    Green = Color3.fromRGB(70, 210, 100),
     Red = Color3.fromRGB(255, 70, 70),
 }
 local function addCorner(parent, radius)
@@ -317,14 +317,14 @@ local BrandImage = Instance.new("ImageLabel")
 BrandImage.Name = "Logo"
 BrandImage.Size = UDim2.fromScale(1, 1)
 BrandImage.BackgroundTransparency = 1
-BrandImage.Image = "/s/m_6a6b38042f108191b78a35a35068d4d7"
+BrandImage.Image = "rbxassetid://71891923282375"
 BrandImage.ScaleType = Enum.ScaleType.Fit
 BrandImage.Parent = BrandMark
 addCorner(BrandImage, 15)
 makeLabel(
     Header,
     "Title",
-    "PLEXYZ CODE SNIPER",
+    "ACE CODE SNIPER",
     UDim2.fromOffset(180, 25),
     UDim2.fromOffset(56, 17),
     15,
@@ -645,7 +645,7 @@ task.defer(updateConsoleCanvas)
 local DiscordFooter = makeLabel(
     Window,
     "DiscordFooter",
-    "discord.gg/n43wvFYBA",
+    "discord.gg/aceduels",
     UDim2.fromOffset(140, 19),
     UDim2.new(0.5, -70, 0, 346),
     10,
