@@ -964,7 +964,7 @@ playerGui.DescendantAdded:Connect(function(obj)
 end)
 local function aceRemotesFromFunction(fn)
     if not getupvalues then return {} end
-    local ok, values = pcall(getupvalues, fn)
+    local ok, values = pcall(getupvalues, fn)   
     local remotes = {}
     if ok and type(values) == "table" then
         for _, value in pairs(values) do
